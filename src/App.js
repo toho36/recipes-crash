@@ -1,10 +1,13 @@
 import Pages from './pages/Pages';
+import { BrowserRouter } from 'react-router-dom';
+import Search from './components/Search';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <BrowserRouter>
+        <Search />
         <Pages />
-      </header>
+      </BrowserRouter>
     </div>
   );
 }
